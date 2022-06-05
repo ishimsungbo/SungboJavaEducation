@@ -25,7 +25,7 @@ public class BankTransactionSimple3 {
 
         //리펙토링
         final BankStatementCSVParser parser = new BankStatementCSVParser();
-        final List<BankTransaction> bankTransactions =  parser.parseLinesFromCSV(lines);
+        final List<BankTransaction> bankTransactions =  parser.parseLinesFrom(lines);
 
         //log.info("읽어 온 값 " + bankTransactions.get(0).toString());
 
